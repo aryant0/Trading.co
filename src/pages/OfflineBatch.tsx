@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 // Unsplash image URLs
 <img 
-src="\src\assets\logo.png" 
+src="https://www.aumtrades.com/wp-content/uploads/2025/01/Untitled-design-2025-01-28T203442.215.png" 
 alt="Logo" 
 className="h-12 w-auto rounded-lg"
 />
@@ -93,7 +93,7 @@ const OfflineBatch = () => {
           {/* Hero Section */}
           <div className="grid md:grid-cols-2 gap-8">
             <img
-              src="src\assets\institue3.jpg"
+              src="https://i.pinimg.com/736x/23/70/34/237034e17808ea3cfbd6cbde3a1b535c.jpg"
               alt="Offline Batch"
               className="rounded-xl w-full h-96 object-cover"
             />
@@ -143,17 +143,17 @@ const OfflineBatch = () => {
             <h2 className="text-2xl font-bold text-white">Our Institute</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <img
-                src="src\assets\institue1.jpg"
+                src="https://i.pinimg.com/736x/a2/4d/aa/a24daa62e7437d52889e9790fd84b8e2.jpg"
                 alt="Institute 1"
                 className="rounded-xl w-full h-64 object-cover"
               />
               <img
-                src="src\assets\institue2-1.png"
+                src="https://i.pinimg.com/736x/3e/0e/81/3e0e81e5c6b1d8a255c8081cdcf2d698.jpg"
                 alt="Institute 2"
                 className="rounded-xl w-full h-64 object-cover"
               />
               <img
-                src="src\assets\institue4.jpg"
+                src="https://i.pinimg.com/736x/37/00/46/37004617efd3657e129dd294b7540846.jpg"
                 alt="Institute 3"
                 className="rounded-xl w-full h-64 object-cover"
               />
