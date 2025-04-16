@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X, FileText } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +13,8 @@ const Navbar = () => {
     { path: '/portfolio', label: 'Testimonials' },
     { path: '/Batches', label: 'Packages' },
     { path: '/contact', label: 'Contact Us' },
-    { path: '/blog', label: 'Blog' },
+    { path: '/blog', label: 'Blogs' },
   ];
-
-  const openBrochure = () => {
-    window.open('/brochure.pdf', '_blank');
-  };
 
   return (
     <nav className="fixed w-full z-50 bg-gradient-to-r from-[#1E2134] to-[#FB5E20] backdrop-blur-sm">
@@ -26,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img 
-              src="https://www.aumtrades.com/wp-content/uploads/2025/01/Untitled-design-2025-01-28T203442.215.png" 
+              src="\src\assets\logo.png" 
               alt="Logo" 
               className="h-12 w-auto rounded-lg"
             />
@@ -40,7 +36,7 @@ const Navbar = () => {
                 to={link.path}
                 className="relative group"
               >
-                <span className="text-white hover:text-[#FB5E20] transition-colors">
+                <span className="text-white font-bold text-lg hover:text-[#FB5E20] transition-colors">
                   {link.label}
                 </span>
                 {location.pathname === link.path && (
@@ -51,13 +47,6 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
-            <button
-              onClick={openBrochure}
-              className="flex items-center gap-2 px-4 py-2 bg-white text-[#FB5E20] rounded-lg font-semibold hover:bg-white/90 transition-colors"
-            >
-              <FileText className="w-5 h-5" />
-              Brochure
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,22 +73,12 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className="block py-2 text-white hover:text-[#FB5E20] transition-colors"
+              className="block py-2 text-white font-bold text-lg hover:text-[#FB5E20] transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {link.label}
             </Link>
           ))}
-          <button
-            onClick={() => {
-              openBrochure();
-              setIsOpen(false);
-            }}
-            className="flex items-center gap-2 w-full py-2 text-white hover:text-[#FB5E20] transition-colors"
-          >
-            <FileText className="w-5 h-5" />
-            Brochure
-          </button>
         </div>
       </motion.div>
     </nav>

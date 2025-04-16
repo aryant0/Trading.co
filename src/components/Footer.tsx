@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Globe, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -19,17 +19,23 @@ const Footer = () => {
               Empowering traders with knowledge and skills to succeed in the financial markets.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
+              <a href="https://www.facebook.com/share/1A7XgijnXL/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
+              <a href="https://www.instagram.com/aumtradinginstitute/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
+              <a href="https://www.linkedin.com/in/aum-the-trading-institute-4182271ab?" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
                 <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="https://youtube.com/@aumtradinginstitute?si=4zINWMcmWKmnp6Du" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a href="https://www.aumtrades.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FB5E20] transition-colors">
+                <Globe className="w-5 h-5" />
               </a>
             </div>
           </motion.div>
@@ -103,10 +109,10 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Contact Info</h3>
             <ul className="space-y-2">
               <li className="text-gray-300">
-                Email: info@theaumtradinginstitute.com
+                Email: <a href="mailto:info@aumtrades.com" className="hover:text-[#FB5E20] transition-colors">info@aumtrades.com</a>
               </li>
               <li className="text-gray-300">
-                Phone: +91 1234567890
+                Phone: <a href="tel:9319184495" className="hover:text-[#FB5E20] transition-colors">9319184495</a>, <a href="tel:6396052891" className="hover:text-[#FB5E20] transition-colors">6396052891</a>
               </li>
               <li className="text-gray-300">
                 Address: 201, Yash Aqua Complex, Above Mc Donalds, Vijay Char Rasta, Ahmedabad
@@ -122,7 +128,7 @@ const Footer = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mt-12 pt-8 border-t border-[#FB5E20]/20 text-center text-gray-300"
         >
-          <p>&copy; {new Date().getFullYear()} Market Shaktimaan. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The AUM Trading Institue. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

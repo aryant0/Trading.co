@@ -4,10 +4,14 @@ import { ArrowLeft, MapPin, Star } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 // Unsplash image URLs
-const offlineBatchImage = "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop";
-const institute1Image = "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop";
-const institute2Image = "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop";
-const institute3Image = "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop";
+<img 
+src="\src\assets\logo.png" 
+alt="Logo" 
+className="h-12 w-auto rounded-lg"
+/>
+const institute1Image = "src\assets\institue2.png";
+const institute2Image = "src\assets\institue3.png";
+const institute3Image = "src\assets\institue3.png";
 
 const OfflineBatch = () => {
   const navigate = useNavigate();
@@ -53,19 +57,19 @@ const OfflineBatch = () => {
 
   const reviews = [
     {
-      name: 'John Doe',
+      name: "Riya Joshi",
+      comment: "Enrolling in the Advanced Trading course at AUM Institute was a game-changer for me. The teaching quality and hands-on practical learning made complex concepts easy to grasp. Certified trainers provided proven strategies that boosted my confidence in trading. I’ve seen a real improvement in my skills and profits. The friendly environment and structured approach made learning seamless. I highly recommend AUM Institute to anyone serious about trading!",
       rating: 5,
-      comment: 'Excellent faculty and infrastructure. The hands-on training really helped me understand trading better.'
     },
     {
-      name: 'Jane Smith',
+      name: "Anju Arya",
+      comment: "Earning money and learning a new skill would be a challenge. But AUM Institute changed my perspective. The mentorship and proven strategies gave me the confidence to step into trading. What once felt like a nightmare turned into an empowering journey. Today, I not only understand trading but also make consistent profits. Thanks to AUM Institute, I can proudly say I’ve achieved something for myself. Highly recommended for anyone looking to start trading!",
       rating: 5,
-      comment: 'The best trading institute I\'ve been to. The mentors are very supportive and knowledgeable.'
     },
     {
-      name: 'Mike Johnson',
+      name: "Vedant Sharma",
+      comment: "As a master’s student with no prior trading experience, I struggled to learn due to unorganized knowledge. Before joining AUM Institute, I faced an ₹80,000 loss. However, the Advanced Trading course completely changed my approach. I learned invaluable strategies, and even before completing the course, I made profits of up to ₹1 lakh. My confidence has skyrocketed, and I’m now on the path to consistent success. I highly recommend AUM Institute to anyone serious about mastering trading.",
       rating: 5,
-      comment: 'Great learning environment with state-of-the-art facilities. Highly recommended!'
     }
   ];
 
@@ -89,7 +93,7 @@ const OfflineBatch = () => {
           {/* Hero Section */}
           <div className="grid md:grid-cols-2 gap-8">
             <img
-              src={offlineBatchImage}
+              src="src\assets\institue3.jpg"
               alt="Offline Batch"
               className="rounded-xl w-full h-96 object-cover"
             />
@@ -139,17 +143,17 @@ const OfflineBatch = () => {
             <h2 className="text-2xl font-bold text-white">Our Institute</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <img
-                src={institute1Image}
+                src="src\assets\institue1.jpg"
                 alt="Institute 1"
                 className="rounded-xl w-full h-64 object-cover"
               />
               <img
-                src={institute2Image}
+                src="src\assets\institue2-1.png"
                 alt="Institute 2"
                 className="rounded-xl w-full h-64 object-cover"
               />
               <img
-                src={institute3Image}
+                src="src\assets\institue4.jpg"
                 alt="Institute 3"
                 className="rounded-xl w-full h-64 object-cover"
               />

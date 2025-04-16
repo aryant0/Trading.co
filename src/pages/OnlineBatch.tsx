@@ -75,7 +75,7 @@ const OnlineBatch = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img
-                src={onlineBatchImage}
+                src="src\assets\online-batch.webp"
                 alt="Online Batch"
                 className="rounded-xl w-full h-96 object-cover"
               />
