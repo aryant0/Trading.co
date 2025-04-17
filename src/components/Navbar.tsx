@@ -23,9 +23,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img 
-              src="/public/logo-removebg-preview.png" 
+              src="https://www.aumtrades.com/wp-content/uploads/2025/01/Untitled-design-2025-01-28T203442.215.png" 
               alt="Logo" 
-              className="h-20 w-auto rounded-lg"
+              className="h-12 w-auto rounded-lg"
             />
           </Link>
 
