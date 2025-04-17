@@ -34,8 +34,7 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white">Email</h3>
               </div>
-              <p className="text-gray-300">info@marketshaktimaan.com</p>
-              <p className="text-gray-300">support@marketshaktimaan.com</p>
+              <p className="text-gray-300">info@aumtrades.com</p>
             </motion.div>
 
             <motion.div
@@ -50,8 +49,8 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white">Phone</h3>
               </div>
-              <p className="text-gray-300">+91 1234567890</p>
-              <p className="text-gray-300">+91 9876543210</p>
+              <p className="text-gray-300">+91 9319184495</p>
+              <p className="text-gray-300">+91 6396052891</p>
             </motion.div>
 
             <motion.div
@@ -66,8 +65,7 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white">Address</h3>
               </div>
-              <p className="text-gray-300">123 Trading Street</p>
-              <p className="text-gray-300">Mumbai, Maharashtra 400001</p>
+              <p className="text-gray-300">201, Yash Aqua Complex, Above Mc Donalds, Vijay Char Rasta, Ahmedabad</p>
             </motion.div>
           </div>
 
@@ -98,28 +96,46 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div>
-                <label htmlFor="subject" className="block text-gray-300 mb-2">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full px-4 py-2 bg-[#1E2134] border border-[#FB5E20]/20 rounded-lg text-white focus:outline-none focus:border-[#FB5E20]"
-                />
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="phone" className="block text-gray-300 mb-2">Phone No</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    className="w-full px-4 py-2 bg-[#1E2134] border border-[#FB5E20]/20 rounded-lg text-white focus:outline-none focus:border-[#FB5E20]"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="city" className="block text-gray-300 mb-2">City</label>
+                  <input
+                    type="text"
+                    id="city"
+                    className="w-full px-4 py-2 bg-[#1E2134] border border-[#FB5E20]/20 rounded-lg text-white focus:outline-none focus:border-[#FB5E20]"
+                  />
+                </div>
               </div>
-              <div>
-                <label htmlFor="message" className="block text-gray-300 mb-2">Message</label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-2 bg-[#1E2134] border border-[#FB5E20]/20 rounded-lg text-white focus:outline-none focus:border-[#FB5E20]"
-                ></textarea>
+              <div className="flex flex-col md:flex-row gap-4 mt-6">
+                <button
+                  type="submit"
+                  className="px-6 py-3 bg-[#FB5E20] hover:bg-[#fb5e20cc] transition text-white font-semibold rounded-lg"
+                >
+                  Submit
+                </button>
+                <a
+                  href="tel:+919319184495"
+                  className="px-6 py-3 bg-[#1E2134] border border-[#FB5E20] text-[#FB5E20] hover:bg-[#FB5E20] hover:text-white transition font-semibold rounded-lg flex items-center justify-center"
+                >
+                  Call Us
+                </a>
+                <a
+                  href="https://wa.me/919319184495"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-[#25D366] hover:bg-[#128C7E] transition text-white font-semibold rounded-lg flex items-center justify-center"
+                >
+                  WhatsApp
+                </a>
               </div>
-              <button
-                type="submit"
-                className="px-6 py-3 bg-[#FB5E20] hover:bg-[#fb5e20cc] transition text-white font-semibold rounded-lg"
-              >
-                Send Message
-              </button>
             </form>
           </motion.div>
         </motion.div>

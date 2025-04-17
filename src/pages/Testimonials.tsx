@@ -25,13 +25,20 @@ const testimonials = [
     rating: 5
   },
   {
+    name: 'Riddhi Yadav',
+    role: 'Aspiring Trader',
+    image: 'https://images.unsplash.com/photo-1502767089025-6572583495b4?q=80&w=1000&auto=format&fit=crop',
+    content: 'An excellent institute for aspiring traders! Provides in-depth market insights, practical strategies, and hands-on training. Perfect for beginners and experienced traders looking to refine their skills. Highly recommended!',
+    rating: 5
+  },
+  {
     name: 'Neha Gupta',
     role: 'Financial Advisor',
     image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop',
     content: 'The risk management strategies taught in the course have been crucial for my trading success. Highly recommended!',
     rating: 5
   }
-];
+,];
 
 const Testimonials = () => {
   return (
@@ -96,4 +103,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials; 
+export default Testimonials;

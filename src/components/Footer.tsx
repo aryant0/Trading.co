@@ -60,13 +60,23 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="/testimonials" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                  Testimonials
+                </a>
+              </li>
+              <li>
                 <a href="/batches" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
-                  Batches
+                  Packages
                 </a>
               </li>
               <li>
                 <a href="/contact" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
-                  Contact
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="/blogs" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                  Blogs
                 </a>
               </li>
             </ul>
@@ -83,17 +93,17 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="/module/module1" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
-                  Module 1: Basics
+                  Module 1: Foundation
                 </a>
               </li>
               <li>
                 <a href="/module/module2" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
-                  Module 2: Technical Analysis
+                  Module 2: Intermediate
                 </a>
               </li>
               <li>
                 <a href="/module/module3" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
-                  Module 3: Advanced Trading
+                  Module 3: Advanced
                 </a>
               </li>
             </ul>

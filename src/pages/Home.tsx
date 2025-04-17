@@ -7,27 +7,27 @@ const Home = () => {
   const features = [
     {
       icon: TrendingUp,
-      title: "Proven Strategies",
+      title: "Deep Analysis",
       description: "Learn the methods that have helped our students go from clueless to confident in record time.",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1635236190542-d43e4d4b9e4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHN0Y2slMjBhbmFseXNpc3xlbnwwfHwwfHx8MA%3D%3D" // Updated image for Deep Analysis
     },
     {
       icon: BookOpen,
       title: "Simplified Learning",
       description: "We break down complex stock and forex concepts into easy, digestible insights—minus the confusing jargon.",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" // Updated image for Simplified Learning
     },
     {
       icon: Users,
       title: "Personalized Attention",
       description: "Small class sizes, one-on-one mentorship, and direct access to the instructors.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNsYXNzJTIwYWR1bHRzfGVufDB8fDB8fHww" // Updated image for Personalized Attention
     },
     {
       icon: Shield,
       title: "Risk Management",
       description: "Our focus on risk management will help you preserve your capital even on the wildest market days.",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1672870153636-32a5e5218792?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmlzayUyMG1hbmFnZW1lbnQlMjBzdG9ja3N8ZW58MHx8MHx8fDA%3D" // Updated image for Risk Management
     }
   ];
 
@@ -117,8 +117,9 @@ const Home = () => {
             <source src="https://videos.pexels.com/video-files/3752548/3752548-hd_1920_1080_24fps.mp4" type="video/mp4" />
           </motion.video>
 
+          {/* Adjusted Overlay */}
           <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-[#1E2134]/90 to-[#2A2D42]/90"
+            className="absolute inset-0 bg-gradient-to-r from-[#1E2134]/70 to-[#2A2D42]/70"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
@@ -139,7 +140,7 @@ const Home = () => {
                 className="space-y-8"
               >
                 <h1 className="text-5xl md:text-6xl font-bold text-white">
-                  Master the Art of Trading with
+                  Master the Art of Stock Market with
                   <span className="text-[#FB5E20] block mt-4">AUM The Trading Institute</span>
                 </h1>
 
@@ -155,12 +156,13 @@ const Home = () => {
                     Start Learning Today
                     <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                   </Link>
-                  <Link
-                    to="/brochure"
+                  <a
+                    href="/src/assets/brochure.pdf"
+                    download="brochure.pdf"
                     className="border-2 border-[#FB5E20] text-[#FB5E20] px-8 py-4 rounded-full hover:bg-[#FB5E20]/10 transition-all"
                   >
-                    View Brochure
-                  </Link>
+                    Download Brochure
+                  </a>
                 </div>
               </motion.div>
 
@@ -183,7 +185,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* About Section */}
+        {/* Stop the Guessing Section */}
         <section className="py-24 bg-[#1E2134]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -227,6 +229,85 @@ const Home = () => {
                   alt="Trading Education"
                   className="rounded-lg shadow-xl object-cover w-full h-auto"
                 />
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section className="py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-4xl font-bold text-white">About Us</h2>
+            </motion.div>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left Content */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="space-y-6"
+              >
+                <p className="text-gray-300 text-lg">
+                  Welcome to <span className="text-[#FB5E20] font-semibold">AUM – The Trading Institute</span>
+                </p>
+                <p className="text-gray-300 text-lg">
+                  AUM is one of India’s premier stock market training institutes, offering the most comprehensive and practical online stock market courses available today. Our mission is to empower the new generation—those who are driven to earn more, take bold steps forward, and break free from financial limitations.
+                </p>
+                <p className="text-gray-300 text-lg">
+                  While trading is often misunderstood as something meant only for a select few, we aim to shatter that myth. At AUM, we focus on teaching time-tested, proven trading strategies that are both practical and profitable. Our goal is to turn curiosity into confidence and guide you toward consistent success in the financial markets.
+                </p>
+                <Link
+                  to="/about"
+                  className="inline-block bg-[#FB5E20] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
+                >
+                  Know More
+                </Link>
+              </motion.div>
+
+              {/* Right Content */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="relative flex items-center justify-center"
+              >
+                {/* Cut-In Styled Image */}
+                <div className="relative group w-96 h-96 md:w-[28rem] md:h-[28rem]">
+                  <img
+                    src="https://i.pinimg.com/736x/8b/91/c9/8b91c92e766fe60f2d9907ec3bba7908.jpg"
+                    alt="About Us"
+                    className="rounded-lg shadow-xl object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#FB5E20]/30 via-transparent to-transparent rounded-lg"></div>
+                </div>
+
+                {/* Moving Shapes */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <motion.div
+                    className="absolute w-16 h-16 bg-[#FB5E20]/30 rounded-full blur-xl"
+                    animate={{ x: [0, 50, -50, 0], y: [0, -50, 50, 0] }}
+                    transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+                  />
+                  <motion.div
+                    className="absolute w-24 h-24 bg-[#FB5E20]/20 rounded-full blur-2xl"
+                    animate={{ x: [-30, 30, -30], y: [30, -30, 30] }}
+                    transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
+                  />
+                  <motion.div
+                    className="absolute w-12 h-12 bg-[#FB5E20]/40 rounded-full blur-lg"
+                    animate={{ x: [20, -20, 20], y: [-20, 20, -20] }}
+                    transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+                  />
+                </div>
               </motion.div>
             </div>
           </div>
@@ -356,6 +437,168 @@ const Home = () => {
                     Join a community of successful traders who have transformed their lives with our guidance.
                   </p>
                 </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Download the Brochure Section */}
+        <section className="py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mb-12"
+            >
+              <h2 className="text-4xl font-bold text-white mb-4">Download the Brochure</h2>
+              <p className="text-gray-400 text-lg">
+                Get detailed insights about our courses, mentorship, and strategies. Download the brochure now!
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <a
+                href="/src/assets/brochure.pdf"
+                download="brochure.pdf"
+                className="inline-block bg-[#FB5E20] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
+              >
+                Download Brochure
+              </a>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Go at Your Own Pace Section */}
+        <section className="py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-4xl font-bold text-white mb-4">Go at Your Own Pace</h2>
+              <p className="text-gray-400 text-lg">
+                Explore all of our courses and pick your suitable ones to enroll and start learning with us! We ensure that you will never regret it!
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 gap-12">
+              {/* Online Batch */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-[#2A2D42] rounded-lg shadow-lg overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+                  alt="Online Batch"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">Online Batch</h3>
+                  <p className="text-gray-400 mb-4">
+                    Learn from anywhere with our comprehensive online trading course. Perfect for those who prefer flexible learning schedules.
+                  </p>
+                  <Link
+                    to="/online-batch"
+                    className="inline-block bg-[#FB5E20] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
+                  >
+                    Get Started
+                  </Link>
+                </div>
+              </motion.div>
+
+              {/* Offline Batch */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-[#2A2D42] rounded-lg shadow-lg overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=80"
+                  alt="Offline Batch"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">Offline Batch</h3>
+                  <p className="text-gray-400 mb-4">
+                    Experience hands-on learning in our state-of-the-art trading lab. Get direct mentorship from industry experts.
+                  </p>
+                  <Link
+                    to="/offline-batch"
+                    className="inline-block bg-[#FB5E20] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
+                  >
+                    Get Started
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Us Section */}
+        <section className="py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mb-12"
+            >
+              <h2 className="text-4xl font-bold text-white mb-4">Contact Us</h2>
+              <p className="text-gray-400 text-lg">
+                Have questions? Reach out to us for more details about our batches and courses.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              {/* Phone Number */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="p-6 border border-[#FB5E20]/40 rounded-lg hover:shadow-lg hover:shadow-[#FB5E20]/50 transition-all"
+              >
+                <p className="text-white text-lg font-semibold mb-4">Call Us</p>
+                <a
+                  href="tel:+919319184495"
+                  className="inline-block bg-[#FB5E20] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
+                >
+                  +91 9319184495
+                </a>
+              </motion.div>
+
+              {/* WhatsApp Button */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="p-6 border border-[#25D366]/40 rounded-lg hover:shadow-lg hover:shadow-[#25D366]/50 transition-all"
+              >
+                <p className="text-white text-lg font-semibold mb-4">Chat on WhatsApp</p>
+                <a
+                  href="https://wa.me/919319184495?text=I%20want%20to%20know%20about%20the%20batches"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#25D366] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1DA851]/90 transition-all"
+                >
+                  Message Us
+                </a>
               </motion.div>
             </div>
           </div>

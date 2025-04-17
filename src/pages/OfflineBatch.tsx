@@ -52,23 +52,25 @@ const OfflineBatch = () => {
     'Real-time trading experience',
     'Networking opportunities',
     'Dedicated trading terminals',
-    'Regular doubt-clearing sessions'
+    'Regular doubt-clearing sessions',
+    'Lifetime access to course materials',
+    '100% placement assistance for top performers'
   ];
 
   const reviews = [
     {
-      name: "Riya Joshi",
-      comment: "Enrolling in the Advanced Trading course at AUM Institute was a game-changer for me. The teaching quality and hands-on practical learning made complex concepts easy to grasp. Certified trainers provided proven strategies that boosted my confidence in trading. I’ve seen a real improvement in my skills and profits. The friendly environment and structured approach made learning seamless. I highly recommend AUM Institute to anyone serious about trading!",
+      name: "Shivansh Verma",
+      comment: "Forget Netflix—I binge-watch stock charts now! Thanks to this institute, I finally understand the market trends and not just my zodiac sign. Definitely the best trading institute in Ahmedabad! Thank you so much Sumit sir for this wonderful institute",
       rating: 5,
     },
     {
-      name: "Anju Arya",
-      comment: "Earning money and learning a new skill would be a challenge. But AUM Institute changed my perspective. The mentorship and proven strategies gave me the confidence to step into trading. What once felt like a nightmare turned into an empowering journey. Today, I not only understand trading but also make consistent profits. Thanks to AUM Institute, I can proudly say I’ve achieved something for myself. Highly recommended for anyone looking to start trading!",
+      name: "Prince Nishant",
+      comment: "I had a fantastic experience at Trading Academy! The instructors were knowledgeable and supportive, and the positive energy made learning enjoyable.",
       rating: 5,
     },
     {
-      name: "Vedant Sharma",
-      comment: "As a master’s student with no prior trading experience, I struggled to learn due to unorganized knowledge. Before joining AUM Institute, I faced an ₹80,000 loss. However, the Advanced Trading course completely changed my approach. I learned invaluable strategies, and even before completing the course, I made profits of up to ₹1 lakh. My confidence has skyrocketed, and I’m now on the path to consistent success. I highly recommend AUM Institute to anyone serious about mastering trading.",
+      name: "divya sengar",
+      comment: "As a teacher, I really appreciate the clear and straightforward way AUM Trading Institute presents trading concepts. Their courses use practical examples that make even complex ideas easy to understand. The instructors also share their real-world experience, making the lessons engaging and truly useful. Really it is the best trading institute in Ahemdabad , Gujarat😇because the skills I learned here are very useful in actual trading . That's why I encourage everyone to explore AUM Trading Institute. If you’re looking to boost your trading skills with clear, real-world insights, give it a try—you might find it as valuable as I do.💯👍",
       rating: 5,
     }
   ];
@@ -97,6 +99,7 @@ const OfflineBatch = () => {
               alt="Offline Batch"
               className="rounded-xl w-full h-96 object-cover"
             />
+           
             <div className="space-y-6">
               <h1 className="text-3xl font-bold text-[#FB5E20]">Offline Batch</h1>
               <p className="text-gray-300">
@@ -105,8 +108,22 @@ const OfflineBatch = () => {
               </p>
               <div className="flex items-center gap-2 text-gray-300">
                 <MapPin className="w-5 h-5 text-[#FB5E20]" />
-                <span>123 Trading Street, Financial District, City</span>
+                <span>
+                  Address: 201, Yash Aqua Complex, Above Mc Donalds, Vijay Char Rasta, Ahmedabad
+                </span>
               </div>
+              <button
+                onClick={() => {
+                  const msg = encodeURIComponent("i want to join the offline batch");
+                  window.open(
+                    `https://wa.me/919319184495?text=${msg}`,
+                    "_blank"
+                  );
+                }}
+                className="px-6 py-3 bg-[#FB5E20] hover:bg-[#fb5e20cc] transition text-white font-semibold rounded-lg"
+              >
+                Contact Us
+              </button>
             </div>
           </div>
 
@@ -133,6 +150,17 @@ const OfflineBatch = () => {
                   >
                     Know More
                   </button>
+                  {/* Module offer notes */}
+                  {index === 1 && (
+                    <p className="mt-2 text-xs text-[#FB5E20] font-semibold text-center">
+                      Get Module 1 free with Module 2
+                    </p>
+                  )}
+                  {index === 2 && (
+                    <p className="mt-2 text-xs text-[#FB5E20] font-semibold text-center">
+                      Get Module 1 &amp; 2 free with Module 3
+                    </p>
+                  )}
                 </motion.div>
               ))}
             </div>
@@ -141,22 +169,63 @@ const OfflineBatch = () => {
           {/* Institute Images */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-white">Our Institute</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <img
-                src="https://i.pinimg.com/736x/a2/4d/aa/a24daa62e7437d52889e9790fd84b8e2.jpg"
-                alt="Institute 1"
-                className="rounded-xl w-full h-64 object-cover"
-              />
-              <img
-                src="https://i.pinimg.com/736x/3e/0e/81/3e0e81e5c6b1d8a255c8081cdcf2d698.jpg"
-                alt="Institute 2"
-                className="rounded-xl w-full h-64 object-cover"
-              />
-              <img
-                src="https://i.pinimg.com/736x/37/00/46/37004617efd3657e129dd294b7540846.jpg"
-                alt="Institute 3"
-                className="rounded-xl w-full h-64 object-cover"
-              />
+            <div className="relative">
+              <button
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#FB5E20] text-white p-2 rounded-full z-10"
+                onClick={() => {
+                  document.getElementById('institute-images').scrollBy({ left: -300, behavior: 'smooth' });
+                }}
+              >
+                &lt;
+              </button>
+              <div
+                id="institute-images"
+                className="flex gap-6 overflow-x-auto scrollbar-hide"
+              >
+                <img
+                  src="https://i.pinimg.com/736x/a2/4d/aa/a24daa62e7437d52889e9790fd84b8e2.jpg"
+                  alt="Institute 1"
+                  className="rounded-xl w-96 h-80 object-cover flex-shrink-0"
+                />
+                <img
+                  src="https://i.pinimg.com/736x/3e/0e/81/3e0e81e5c6b1d8a255c8081cdcf2d698.jpg"
+                  alt="Institute 2"
+                  className="rounded-xl w-96 h-80 object-cover flex-shrink-0"
+                />
+                <img
+                  src="https://i.pinimg.com/736x/37/00/46/37004617efd3657e129dd294b7540846.jpg"
+                  alt="Institute 3"
+                  className="rounded-xl w-96 h-80 object-cover flex-shrink-0"
+                />
+                <img
+                  src="https://i.pinimg.com/474x/3c/d2/8f/3cd28f6d82a7d6288ac93a24e391b3b2.jpg"
+                  alt="Institute 4"
+                  className="rounded-xl w-96 h-80 object-cover flex-shrink-0"
+                />
+                <img
+                  src="https://i.pinimg.com/474x/a4/d0/03/a4d00307d327f48498a55b4463ca3aaf.jpg"
+                  alt="Institute 5"
+                  className="rounded-xl w-96 h-80 object-cover flex-shrink-0"
+                />
+                <img
+                  src="https://i.pinimg.com/474x/21/d2/77/21d2773de0bb5a30e8f898f86307b803.jpg"
+                  alt="Institute 6"
+                  className="rounded-xl w-96 h-80 object-cover flex-shrink-0"
+                />
+                <img
+                  src="https://i.pinimg.com/736x/b4/77/b8/b477b868344397758c3c8fce95f7a95c.jpg"
+                  alt="Institute 7"
+                  className="rounded-xl w-96 h-80 object-cover flex-shrink-0"
+                />
+              </div>
+              <button
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#FB5E20] text-white p-2 rounded-full z-10"
+                onClick={() => {
+                  document.getElementById('institute-images').scrollBy({ left: 300, behavior: 'smooth' });
+                }}
+              >
+                &gt;
+              </button>
             </div>
           </div>
 
@@ -199,17 +268,10 @@ const OfflineBatch = () => {
               ))}
             </div>
           </div>
-
-          <button
-            onClick={() => navigate('/contact')}
-            className="px-6 py-3 bg-[#FB5E20] hover:bg-[#fb5e20cc] transition text-white font-semibold rounded-lg"
-          >
-            Contact Us
-          </button>
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default OfflineBatch; 
+export default OfflineBatch;

@@ -46,7 +46,7 @@ const OnlineBatch = () => {
     'Access to recorded sessions',
     'One-on-one mentorship',
     'Interactive live sessions',
-    'Global community access',
+    'Lifetime access',
     'Cost-effective learning'
   ];
 
@@ -92,12 +92,57 @@ const OnlineBatch = () => {
                 Get access to live sessions, recorded lectures, and interactive learning materials.
               </p>
               <button
-                onClick={() => navigate('/contact')}
+                onClick={() => {
+                  const msg = encodeURIComponent("i want to join online batch");
+                  window.open(
+                    `https://wa.me/919319184495?text=${msg}`,
+                    "_blank"
+                  );
+                }}
                 className="px-6 py-2 bg-[#FB5E20] hover:bg-[#fb5e20cc] transition text-white font-semibold rounded-lg"
               >
                 Contact Us
               </button>
             </motion.div>
+          </div>
+
+          {/* Modules Section */}
+          <div className="space-y-8">
+            <h2 className="text-2xl font-bold text-white">Course Modules</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {modules.map((module, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-[#1E2134] rounded-xl border border-[#FB5E20]/20 p-6"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 150 }}
+                >
+                  <h3 className="text-xl font-semibold text-[#FB5E20] mb-4">{module.title}</h3>
+                  <ul className="space-y-2">
+                    {module.points.map((point, i) => (
+                      <li key={i} className="text-gray-300">{point}</li>
+                    ))}
+                  </ul>
+                  {/* Module offer notes */}
+                  {index === 1 && (
+                    <p className="mt-2 text-xs text-[#FB5E20] font-semibold text-center">
+                      Get Module 1 free with Module 2
+                    </p>
+                  )}
+                  {index === 2 && (
+                    <p className="mt-2 text-xs text-[#FB5E20] font-semibold text-center">
+                      Get Module 1 &amp; 2 free with Module 3
+                    </p>
+                  )}
+                  <button
+                    onClick={() => navigate(`/module/module${index + 1}`)}
+                    className="mt-4 px-4 py-2 bg-[#FB5E20] hover:bg-[#fb5e20cc] transition text-white font-semibold rounded-lg w-full"
+                  >
+                    Know More
+                  </button>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
           {/* Features Section */}
@@ -154,34 +199,6 @@ const OnlineBatch = () => {
             </motion.div>
           </div>
 
-          {/* Modules Section */}
-          <div className="space-y-8">
-            <h2 className="text-2xl font-bold text-white">Course Modules</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {modules.map((module, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-[#1E2134] rounded-xl border border-[#FB5E20]/20 p-6"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 150 }}
-                >
-                  <h3 className="text-xl font-semibold text-[#FB5E20] mb-4">{module.title}</h3>
-                  <ul className="space-y-2">
-                    {module.points.map((point, i) => (
-                      <li key={i} className="text-gray-300">{point}</li>
-                    ))}
-                  </ul>
-                  <button
-                    onClick={() => navigate(`/module/module${index + 1}`)}
-                    className="mt-4 px-4 py-2 bg-[#FB5E20] hover:bg-[#fb5e20cc] transition text-white font-semibold rounded-lg w-full"
-                  >
-                    Know More
-                  </button>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
           {/* Positive Points */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-white">Why Choose Online Batch?</h2>
@@ -204,4 +221,4 @@ const OnlineBatch = () => {
   );
 };
 
-export default OnlineBatch; 
+export default OnlineBatch;

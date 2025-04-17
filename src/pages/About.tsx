@@ -26,7 +26,7 @@ const About = () => {
     },
     {
       icon: Trophy,
-      title: "Proven Strategies",
+      title: "Deep Analysis",
       description: "Battle-tested methods that actually work in real markets"
     },
     {
@@ -262,7 +262,7 @@ const About = () => {
             <Target className="w-12 h-12 text-[#FB5E20] mb-4" />
             <h2 className="text-3xl font-bold text-white mb-4">Our Mission</h2>
             <p className="text-gray-400">
-              To empower traders with practical skills and real-world knowledge through hands-on training and expert mentorship.
+              Our mission is to inspire individuals by equipping them with the vital knowledge and practical skills essential for success in the dynamic world of trading. We are devoted to delivering completely hands-on training that seamlessly integrates theoretical insights with practical experience. Our aim is to arm our students with the capabilities and assurance needed to become successful traders. By nurturing an engaging learning environment that fosters creativity, innovation, flexibility, and lifelong learning, we seek to develop a community of talented traders ready to make a significant difference in the industry!
             </p>
           </motion.div>
 
@@ -275,7 +275,7 @@ const About = () => {
             <Eye className="w-12 h-12 text-[#FB5E20] mb-4" />
             <h2 className="text-3xl font-bold text-white mb-4">Our Vision</h2>
             <p className="text-gray-400">
-              To be the global leader in trading education, building a strong community of confident, successful traders.
+              At AUM Trading Institute, our vision is to be the leading platform for financial education, shaping the future of trading by empowering individuals with expert knowledge and practical skills. We strive to create a global community of successful traders who are equipped to navigate the financial markets with confidence, consistency, and profitability. Our goal is to inspire financial independence and drive sustainable growth for every student.
             </p>
           </motion.div>
         </div>

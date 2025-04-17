@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-gradient-to-r from-[#1E2134] to-[#FB5E20] backdrop-blur-sm">
+    <nav className="fixed w-full z-50 bg-gradient-to-r from-[#1E2134] via-white to-[#FB5E20]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
@@ -37,7 +37,7 @@ const Navbar = () => {
                 to={link.path}
                 className="relative group"
               >
-                <span className="text-white font-bold text-lg hover:text-[#FB5E20] transition-colors">
+                <span className="text-blue-700 font-bold text-lg hover:text-[#FB5E20] transition-colors">
                   {link.label}
                 </span>
                 {location.pathname === link.path && (
@@ -54,7 +54,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-[#FB5E20] transition-colors"
+              className="text-blue-700 hover:text-[#FB5E20] transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -67,14 +67,14 @@ const Navbar = () => {
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
         transition={{ duration: 0.3 }}
-        className="md:hidden overflow-hidden bg-gradient-to-r from-[#1E2134] to-[#FB5E20]"
+        className="md:hidden overflow-hidden bg-gradient-to-r from-[#1E2134] via-white to-[#FB5E20]"
       >
         <div className="px-4 pt-2 pb-3 space-y-1">
           {links.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className="block py-2 text-white font-bold text-lg hover:text-[#FB5E20] transition-colors"
+              className="block py-2 text-blue-700 font-bold text-lg hover:text-[#FB5E20] transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {link.label}

@@ -43,6 +43,13 @@ const Portfolio = () => {
       image: "https://randomuser.me/api/portraits/men/40.jpg",
     },
     {
+      name: 'Riddhi Yadav',
+      role: 'Aspiring Trader',
+      image: 'https://lh3.googleusercontent.com/a-/ALV-UjUVCUEfHfFrzpdSfb5f3oGIEdXv6ga1IE7r5kck5JtnwsTJSIVR=w75-h75-p-rp-mo-br100',
+      text: 'An excellent institute for aspiring traders! Provides in-depth market insights, practical strategies, and hands-on training. Perfect for beginners and experienced traders looking to refine their skills. Highly recommended!',
+      
+    },
+    {
       name: "Vedant Sharma",
       text: "As a master’s student with no prior trading experience, I struggled to learn due to unorganized knowledge. Before joining AUM Institute, I faced an ₹80,000 loss. However, the Advanced Trading course completely changed my approach. I learned invaluable strategies, and even before completing the course, I made profits of up to ₹1 lakh. My confidence has skyrocketed, and I’m now on the path to consistent success. I highly recommend AUM Institute to anyone serious about mastering trading.",
       image: "https://randomuser.me/api/portraits/men/33.jpg",
