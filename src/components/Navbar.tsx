@@ -36,6 +36,7 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 className="relative group"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 <span className="font-serif text-[#1E2134] font-bold text-lg hover:text-[#FB5E20] transition-colors tracking-wide">
                   {link.label}
@@ -75,7 +76,10 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               className="block py-2 font-serif text-[#1E2134] font-bold text-lg hover:text-[#FB5E20] transition-colors tracking-wide"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setIsOpen(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
             >
               {link.label}
             </Link>
