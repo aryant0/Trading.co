@@ -85,6 +85,35 @@ const Home = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Features carousel state and logic
+  const [featureIndex, setFeatureIndex] = useState(0);
+  const featuresToShow = 4; // Show 4 cards at a time
+
+  // For seamless infinite loop, duplicate features array
+  const carouselFeatures = [...features, ...features];
+
+  // Auto-advance carousel (left to right, seamless loop)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFeatureIndex((prev) => (prev + 1) % features.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [features.length]);
+
+  // Manual navigation handlers
+  const handlePrev = () => {
+    setFeatureIndex((prev) => (prev - 1 + features.length) % features.length);
+  };
+  const handleNext = () => {
+    setFeatureIndex((prev) => (prev + 1) % features.length);
+  };
+
+  // Calculate translateX for seamless loop
+  const getTranslateX = () => {
+    // Each card is 100/featuresToShow percent wide
+    return `-${featureIndex * (100 / featuresToShow)}%`;
+  };
+
   return (
     <div className="relative min-h-screen">
       {/* Moving grid lines background */}
@@ -328,26 +357,55 @@ const Home = () => {
             </motion.div>
 
             <div className="relative overflow-hidden">
+              {/* Manual navigation buttons */}
+              <button
+                aria-label="Previous"
+                onClick={handlePrev}
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#FB5E20] text-white rounded-full p-2 shadow-lg hover:bg-[#FB5E20]/80 transition"
+                style={{ left: '-2rem' }}
+              >
+                &#8592;
+              </button>
+              <button
+                aria-label="Next"
+                onClick={handleNext}
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#FB5E20] text-white rounded-full p-2 shadow-lg hover:bg-[#FB5E20]/80 transition"
+                style={{ right: '-2rem' }}
+              >
+                &#8594;
+              </button>
               <motion.div
-                className="flex gap-8"
-                animate={{ x: ["0%", "-100%"] }}
-                transition={{
-                  repeat: Infinity,
-                  duration: 15,
-                  ease: "linear",
+                className="flex gap-8 transition-transform duration-700 ease-in-out"
+                animate={{ x: getTranslateX() }}
+                style={{
+                  width: `${carouselFeatures.length * (100 / featuresToShow)}%`,
                 }}
               >
-                {features.concat(features).map((feature, index) => (
-                  <div
-                    key={index}
+                {carouselFeatures.map((feature, idx) => (
+                  <motion.div
+                    key={idx}
                     className="flex-shrink-0 w-80 bg-[#1E2134] p-8 rounded-2xl border border-[#FB5E20]/20 hover:border-[#FB5E20]/40 transition-all"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
                   >
                     <feature.icon className="w-12 h-12 text-[#FB5E20] mb-4" />
                     <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
                     <p className="text-gray-400">{feature.description}</p>
-                  </div>
+                  </motion.div>
                 ))}
               </motion.div>
+            </div>
+            {/* Dots for navigation */}
+            <div className="flex justify-center mt-6 gap-2">
+              {features.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setFeatureIndex(idx)}
+                  className={`w-3 h-3 rounded-full ${featureIndex === idx ? 'bg-[#FB5E20]' : 'bg-gray-400/40'} transition`}
+                  aria-label={`Go to feature ${idx + 1}`}
+                />
+              ))}
             </div>
           </div>
         </section>
