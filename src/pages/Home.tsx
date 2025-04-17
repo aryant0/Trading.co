@@ -157,7 +157,7 @@ const Home = () => {
                     <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <a
-                    href="public\brochure.pdf"
+                    href="/brochure.pdf"
                     download="brochure.pdf"
                     className="border-2 border-[#FB5E20] text-[#FB5E20] px-8 py-4 rounded-full hover:bg-[#FB5E20]/10 transition-all"
                   >
