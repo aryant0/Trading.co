@@ -157,7 +157,7 @@ const Home = () => {
                     <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <a
-                    href="public\assets\brochure .pdf"
+                    href="public\brochure.pdf"
                     download="brochure.pdf"
                     className="border-2 border-[#FB5E20] text-[#FB5E20] px-8 py-4 rounded-full hover:bg-[#FB5E20]/10 transition-all"
                   >
@@ -442,37 +442,41 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Download the Brochure Section */}
-        <section className="py-24 bg-[#1E2134]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="mb-12"
-            >
-              <h2 className="text-4xl font-bold text-white mb-4">Download the Brochure</h2>
-              <p className="text-gray-400 text-lg">
-                Get detailed insights about our courses, mentorship, and strategies. Download the brochure now!
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <a
-                href="public\assets\brochure .pdf"
-                download="brochure.pdf"
-                className="inline-block bg-[#FB5E20] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
-              >
-                Download Brochure
-              </a>
-            </motion.div>
-          </div>
-        </section>
+  {/* Download the Brochure Section */}
+<section className="py-24 bg-[#1E2134]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="mb-12"
+    >
+      <h2 className="text-4xl font-bold text-white mb-4">Download the Brochure</h2>
+      <p className="text-gray-400 text-lg">
+        Get detailed insights about our courses, mentorship, and strategies. Download the brochure now!
+      </p>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <a
+        href="/brochure.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-[#FB5E20] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
+      >
+        View Brochure
+      </a>
+    </motion.div>
+  </div>
+</section>
+
+
 
         {/* Go at Your Own Pace Section */}
         <section className="py-24 bg-[#1E2134]">
