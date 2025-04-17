@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Twitter, Instagram, Linkedin, Globe, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -50,34 +51,34 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/about" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/testimonials" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/portfolio" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
                   Testimonials
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/batches" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/Batches" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
                   Packages
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/contact" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blogs" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/blog" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
                   Blogs
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>

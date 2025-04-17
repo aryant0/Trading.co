@@ -20,28 +20,25 @@ const OfflineBatch = () => {
     {
       title: 'Module 1: Foundation',
       points: [
-        'Market Basics & Terminology',
-        'Trading Platform Overview',
-        'Basic Technical Analysis',
-        'Risk Management Fundamentals'
+        'Introduction to the Security Market',
+        'Website Tour & Tools',
+        'Understanding News & Analysis'
       ]
     },
     {
       title: 'Module 2: Intermediate',
       points: [
-        'Chart Patterns & Indicators',
-        'Options and Futures Introduction',
-        'Trade Management Techniques',
-        'Advanced Risk Management'
+        'Advanced Technical Analysis',
+        'Trend Lines & Patterns',
+        'Dow & Harmonic Theory'
       ]
     },
     {
       title: 'Module 3: Advanced',
       points: [
-        'Algorithmic Trading Basics',
-        'Risk Mitigation Strategies',
-        'Trading Psychology & Discipline',
-        'Portfolio Management'
+        'Forex Market Mastery',
+        'Understanding Forex',
+        'Global Market Indices Analysis'
       ]
     }
   ];
@@ -55,24 +52,6 @@ const OfflineBatch = () => {
     'Regular doubt-clearing sessions',
     'Lifetime access to course materials',
     '100% placement assistance for top performers'
-  ];
-
-  const reviews = [
-    {
-      name: "Shivansh Verma",
-      comment: "Forget Netflix—I binge-watch stock charts now! Thanks to this institute, I finally understand the market trends and not just my zodiac sign. Definitely the best trading institute in Ahmedabad! Thank you so much Sumit sir for this wonderful institute",
-      rating: 5,
-    },
-    {
-      name: "Prince Nishant",
-      comment: "I had a fantastic experience at Trading Academy! The instructors were knowledgeable and supportive, and the positive energy made learning enjoyable.",
-      rating: 5,
-    },
-    {
-      name: "divya sengar",
-      comment: "As a teacher, I really appreciate the clear and straightforward way AUM Trading Institute presents trading concepts. Their courses use practical examples that make even complex ideas easy to understand. The instructors also share their real-world experience, making the lessons engaging and truly useful. Really it is the best trading institute in Ahemdabad , Gujarat😇because the skills I learned here are very useful in actual trading . That's why I encourage everyone to explore AUM Trading Institute. If you’re looking to boost your trading skills with clear, real-world insights, give it a try—you might find it as valuable as I do.💯👍",
-      rating: 5,
-    }
   ];
 
   return (
@@ -241,29 +220,6 @@ const OfflineBatch = () => {
                   transition={{ type: "spring", stiffness: 150 }}
                 >
                   <p className="text-gray-300">{point}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Reviews */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-white">Student Reviews</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {reviews.map((review, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-[#1E2134] rounded-xl border border-[#FB5E20]/20 p-6"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 150 }}
-                >
-                  <div className="flex items-center gap-1 mb-2">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-[#FB5E20] fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-gray-300 mb-2">{review.comment}</p>
-                  <p className="text-[#FB5E20] font-semibold">{review.name}</p>
                 </motion.div>
               ))}
             </div>

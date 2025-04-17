@@ -13,21 +13,21 @@ const Blog = () => {
       title: "Understanding Market Trends: A Beginner's Guide",
       excerpt: "Learn how to identify and analyze market trends to make better trading decisions.",
       image: blogImage1,
-      date: "March 15, 2024",
+      
       category: "Market Analysis"
     },
     {
       title: "Technical Analysis: Chart Patterns You Should Know",
       excerpt: "Discover the most important chart patterns and how to use them in your trading strategy.",
       image: blogImage2,
-      date: "March 10, 2024",
+      
       category: "Technical Analysis"
     },
     {
       title: "Risk Management: Protecting Your Investments",
       excerpt: "Essential risk management strategies every trader should implement.",
       image: blogImage3,
-      date: "March 5, 2024",
+      
       category: "Risk Management"
     }
   ];
@@ -80,23 +80,7 @@ const Blog = () => {
             ))}
           </div>
 
-          {/* Categories */}
-          <div className="grid md:grid-cols-4 gap-6">
-            {['Market Analysis', 'Technical Analysis', 'Risk Management', 'Trading Psychology'].map((category, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                className="bg-[#2A2D42] rounded-2xl p-6 border border-[#FB5E20]/20 hover:border-[#FB5E20]/40 transition-colors"
-              >
-                <h3 className="text-xl font-semibold text-white mb-4">{category}</h3>
-                <p className="text-gray-300">
-                  Explore our collection of articles and resources about {category.toLowerCase()}.
-                </p>
-              </motion.div>
-            ))}
-          </div>
+          
         </motion.div>
       </div>
     </div>

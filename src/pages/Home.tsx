@@ -157,7 +157,7 @@ const Home = () => {
                     <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <a
-                    href="/src/assets/brochure.pdf"
+                    href="public\assets\brochure .pdf"
                     download="brochure.pdf"
                     className="border-2 border-[#FB5E20] text-[#FB5E20] px-8 py-4 rounded-full hover:bg-[#FB5E20]/10 transition-all"
                   >
@@ -283,7 +283,7 @@ const Home = () => {
                 {/* Cut-In Styled Image */}
                 <div className="relative group w-96 h-96 md:w-[28rem] md:h-[28rem]">
                   <img
-                    src="https://i.pinimg.com/736x/8b/91/c9/8b91c92e766fe60f2d9907ec3bba7908.jpg"
+                    src="https://i.pinimg.com/736x/b0/b4/60/b0b460f6b0928b57219b1e6da71ea04d.jpg"
                     alt="About Us"
                     className="rounded-lg shadow-xl object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
                   />
@@ -464,7 +464,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <a
-                href="/src/assets/brochure.pdf"
+                href="public\assets\brochure .pdf"
                 download="brochure.pdf"
                 className="inline-block bg-[#FB5E20] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
               >
@@ -490,21 +490,17 @@ const Home = () => {
               </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Online Batch */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="bg-[#2A2D42] rounded-lg shadow-lg overflow-hidden"
+                className="flex flex-col md:flex-row bg-[#2A2D42] rounded-lg shadow-lg overflow-hidden"
               >
-                <img
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
-                  alt="Online Batch"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
+                {/* Left: Text */}
+                <div className="flex flex-col justify-center p-6 md:w-1/2 w-full">
                   <h3 className="text-2xl font-bold text-white mb-2">Online Batch</h3>
                   <p className="text-gray-400 mb-4">
                     Learn from anywhere with our comprehensive online trading course. Perfect for those who prefer flexible learning schedules.
@@ -516,6 +512,14 @@ const Home = () => {
                     Get Started
                   </Link>
                 </div>
+                {/* Right: Image */}
+                <div className="md:w-1/2 w-full h-60 md:h-auto">
+                  <img
+                    src="https://i.pinimg.com/736x/cd/97/bb/cd97bbed27ef0511f0577b89e495eb03.jpg"
+                    alt="Online Batch"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </motion.div>
 
               {/* Offline Batch */}
@@ -524,14 +528,10 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="bg-[#2A2D42] rounded-lg shadow-lg overflow-hidden"
+                className="flex flex-col md:flex-row bg-[#2A2D42] rounded-lg shadow-lg overflow-hidden"
               >
-                <img
-                  src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=80"
-                  alt="Offline Batch"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
+                {/* Left: Text */}
+                <div className="flex flex-col justify-center p-6 md:w-1/2 w-full">
                   <h3 className="text-2xl font-bold text-white mb-2">Offline Batch</h3>
                   <p className="text-gray-400 mb-4">
                     Experience hands-on learning in our state-of-the-art trading lab. Get direct mentorship from industry experts.
@@ -542,6 +542,14 @@ const Home = () => {
                   >
                     Get Started
                   </Link>
+                </div>
+                {/* Right: Image */}
+                <div className="md:w-1/2 w-full h-60 md:h-auto">
+                  <img
+                    src="https://i.pinimg.com/736x/61/8a/4d/618a4daf6d596342a4cab29fb0b26337.jpg"
+                    alt="Offline Batch"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </motion.div>
             </div>

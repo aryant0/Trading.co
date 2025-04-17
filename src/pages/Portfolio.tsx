@@ -10,37 +10,37 @@ const Portfolio = () => {
     {
       name: "Om Pratap Singh",
       text: "Joining aum the trading institute was a game-changer for me. The instructors are incredibly knowledgeable and always willing to help. I went from a complete beginner to confidently making trades in just a few months. I highly recommend this institute to anyone looking to enhance their trading skills!",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      image: "https://i.pinimg.com/736x/58/e4/b6/58e4b63de671c325914a08fdfaffb785.jpg",
     },
     {
       name: "Kashish Singh",
       text: "I had been struggling with trading for years, but after enrolling at aum the trading institute , everything changed. The structured curriculum and hands-on training provided me with the skills and confidence I needed to succeed. The supportive community made all the difference. Thank you for helping me achieve my trading goals!",
-      image: "https://randomuser.me/api/portraits/women/45.jpg",
+      image: "https://i.pinimg.com/736x/53/d1/1b/53d11bbc5f6e26f7693b7a2686905a72.jpg",
     },
     {
       name: "Sourav Rajput",
       text: "I can’t thank aum the trading institute enough for the education and support I’ve received. The courses are well-designed, and the real-world insights from the instructors are invaluable. I’ve seen a significant improvement in my trading strategies and results. If you’re serious about trading, this is the place to be!",
-      image: "https://randomuser.me/api/portraits/men/52.jpg",
+      image: "https://i.pinimg.com/736x/af/24/50/af245016dee883ff86dbc1784235ad06.jpg",
     },
     {
       name: "Muskan Shaikh",
       text: "Joining [aum- the trading institute] has been an amazing experience for me. The teachers here are very knowledgeable and always ready to help everyone. The knowledge and skills I’ve gained have significantly improved my trading. I highly recommend this institute to everyone!",
-      image: "https://randomuser.me/api/portraits/women/60.jpg",
+      image: "https://i.pinimg.com/736x/04/4e/26/044e26b51687a05d4b55297a97974083.jpg",
     },
     {
       name: "Riya Joshi",
       text: "Enrolling in the Advanced Trading course at AUM Institute was a game-changer for me. The teaching quality and hands-on practical learning made complex concepts easy to grasp. Certified trainers provided proven strategies that boosted my confidence in trading. I’ve seen a real improvement in my skills and profits. The friendly environment and structured approach made learning seamless. I highly recommend AUM Institute to anyone serious about trading!",
-      image: "https://randomuser.me/api/portraits/women/28.jpg",
+      image: "https://i.pinimg.com/736x/57/ae/46/57ae46d17f955e9ccb503da68752dad8.jpg",
     },
     {
       name: "Anju Arya",
       text: "Earning money and learning a new skill would be a challenge. But AUM Institute changed my perspective. The mentorship and proven strategies gave me the confidence to step into trading. What once felt like a nightmare turned into an empowering journey. Today, I not only understand trading but also make consistent profits. Thanks to AUM Institute, I can proudly say I’ve achieved something for myself. Highly recommended for anyone looking to start trading!",
-      image: "https://randomuser.me/api/portraits/women/70.jpg",
+      image: "https://i.pinimg.com/474x/f5/bf/97/f5bf97c90621fbe1b47641905811b8ed.jpg",
     },
     {
       name: "Ankit",
       text: "As a working professional with prior trading experience, I struggled with continuous losses due to a lack of proper knowledge. AUM Institute transformed my approach with next-level teaching and hands-on practice. Their structured, organized way of delivering trading concepts boosted my confidence and skills. Now, I consistently make profits with their proven strategies. If you’re looking for clutter-free, effective trading education, AUM Institute is the place to be",
-      image: "https://randomuser.me/api/portraits/men/40.jpg",
+      image: "https://i.pinimg.com/736x/8a/e2/9a/8ae29a7ea4c748a70cac76cf01420e12.jpg",
     },
     {
       name: 'Riddhi Yadav',
@@ -52,7 +52,7 @@ const Portfolio = () => {
     {
       name: "Vedant Sharma",
       text: "As a master’s student with no prior trading experience, I struggled to learn due to unorganized knowledge. Before joining AUM Institute, I faced an ₹80,000 loss. However, the Advanced Trading course completely changed my approach. I learned invaluable strategies, and even before completing the course, I made profits of up to ₹1 lakh. My confidence has skyrocketed, and I’m now on the path to consistent success. I highly recommend AUM Institute to anyone serious about mastering trading.",
-      image: "https://randomuser.me/api/portraits/men/33.jpg",
+      image: "https://i.pinimg.com/736x/a6/5e/8f/a65e8fd39973030811d75cc86f8cd9ae.jpg",
     },
   ];
 

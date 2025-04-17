@@ -206,8 +206,7 @@ const Module = () => {
                       transition={{ duration: 0.3, delay: index * 0.1 }}
                       className="flex items-start gap-3"
                     >
-                      <span className="text-[#FB5E20] mt-1">•</span>
-                      <p className="text-gray-300">{point}</p>
+                      <p className="text-gray-300">{point.replace(/^•\s*/, '')}</p>
                     </motion.div>
                   )
                 ))}
@@ -235,4 +234,4 @@ const Module = () => {
   );
 };
 
-export default Module; 
+export default Module;

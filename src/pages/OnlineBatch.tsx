@@ -15,28 +15,25 @@ const OnlineBatch = () => {
     {
       title: 'Module 1: Foundation',
       points: [
-        'Market Basics & Terminology',
-        'Trading Platform Overview',
-        'Basic Technical Analysis',
-        'Risk Management Fundamentals'
+        'Introduction to the Security Market',
+        'Website Tour & Tools',
+        'Understanding News & Analysis'
       ]
     },
     {
       title: 'Module 2: Intermediate',
       points: [
-        'Chart Patterns & Indicators',
-        'Options and Futures Introduction',
-        'Trade Management Techniques',
-        'Advanced Risk Management'
+        'Advanced Technical Analysis',
+        'Trend Lines & Patterns',
+        'Dow & Harmonic Theory'
       ]
     },
     {
       title: 'Module 3: Advanced',
       points: [
-        'Algorithmic Trading Basics',
-        'Risk Mitigation Strategies',
-        'Trading Psychology & Discipline',
-        'Portfolio Management'
+        'Forex Market Mastery',
+        'Understanding Forex',
+        'Global Market Indices Analysis'
       ]
     }
   ];
@@ -143,60 +140,6 @@ const OnlineBatch = () => {
                 </motion.div>
               ))}
             </div>
-          </div>
-
-          {/* Features Section */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="bg-[#1E2134] rounded-2xl border border-[#FB5E20]/20 p-6"
-            >
-              <img
-                src={tradingDeskImage}
-                alt="Live Trading Sessions"
-                className="rounded-xl w-full h-48 object-cover mb-4"
-              />
-              <h3 className="text-xl font-semibold text-white mb-2">Live Trading Sessions</h3>
-              <p className="text-gray-300">
-                Interactive live trading sessions with expert trainers, where you can ask questions and get real-time feedback.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="bg-[#1E2134] rounded-2xl border border-[#FB5E20]/20 p-6"
-            >
-              <img
-                src={learningImage}
-                alt="Recorded Lectures"
-                className="rounded-xl w-full h-48 object-cover mb-4"
-              />
-              <h3 className="text-xl font-semibold text-white mb-2">Recorded Lectures</h3>
-              <p className="text-gray-300">
-                Access to all recorded lectures and materials, allowing you to learn at your own pace and revisit concepts.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="bg-[#1E2134] rounded-2xl border border-[#FB5E20]/20 p-6"
-            >
-              <img
-                src={onlineBatchImage}
-                alt="Interactive Learning"
-                className="rounded-xl w-full h-48 object-cover mb-4"
-              />
-              <h3 className="text-xl font-semibold text-white mb-2">Interactive Learning</h3>
-              <p className="text-gray-300">
-                Engage with fellow students and trainers through our online platform, participate in discussions and group activities.
-              </p>
-            </motion.div>
           </div>
 
           {/* Positive Points */}
