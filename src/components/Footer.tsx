@@ -51,32 +51,32 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/" className="text-gray-300 hover:text-[#FB5E20] transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/about" className="text-gray-300 hover:text-[#FB5E20] transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/portfolio" className="text-gray-300 hover:text-[#FB5E20] transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link to="/Batches" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/Batches" className="text-gray-300 hover:text-[#FB5E20] transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Packages
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/contact" className="text-gray-300 hover:text-[#FB5E20] transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link to="/blog" className="text-gray-300 hover:text-[#FB5E20] transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Blogs
                 </Link>
               </li>

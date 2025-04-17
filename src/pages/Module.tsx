@@ -17,6 +17,7 @@ const Module = () => {
       title: "Module 1: Your First Step into the Stock Market",
       description: "This package lays down the fundamentals and gives you hands-on training so you can start trading confidently. You'll understand the entire ecosystem and gain the necessary skills to get your trading journey started the right way.",
       image: module1Image,
+      duration: "1.5 months",
       points: [
         "Module 1.1: Introduction to the Security Market",
         "• Website Tour & Tools",
@@ -50,6 +51,7 @@ const Module = () => {
       title: "Module 2: Technical Analysis and Fundamental Analysis",
       description: "This package is designed for those who are ready to level up their trading. With a focus on technical analysis, chart patterns, and trading strategies, you'll be equipped to make smarter, more informed trades.",
       image: module2Image,
+      duration: "3 months",
       points: [
         "Module 2.1: Advanced Technical Analysis",
         "• Trend Lines & Patterns",
@@ -89,6 +91,7 @@ const Module = () => {
       title: "Module 3: Advanced Market Mastery",
       description: "This comprehensive package takes you beyond traditional stock market trading into the exciting worlds of Forex, Cryptocurrency, and Commodity markets, while also teaching you advanced portfolio management techniques.",
       image: module3Image,
+      duration: "5 months",
       points: [
         "Module 3.1: Forex Market Mastery",
         "• Understanding Forex",
@@ -154,7 +157,10 @@ const Module = () => {
           {/* Module Header */}
           <div className="bg-[#1E2134] rounded-2xl border border-[#FB5E20]/20 p-8">
             <h1 className="text-3xl font-bold text-[#FB5E20] mb-4">{currentModule.title}</h1>
-            <p className="text-gray-300">{currentModule.description}</p>
+            <p className="text-gray-300 mb-2">{currentModule.description}</p>
+            <p className="text-white font-semibold">
+              Duration: <span className="text-[#FB5E20]">{currentModule.duration}</span>
+            </p>
           </div>
 
           {/* Module Content */}

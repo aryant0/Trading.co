@@ -560,10 +560,10 @@ const Home = () => {
                 className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-6"
               >
                 <img
-                  src="https://i.pinimg.com/736x/28/80/87/288087a6250be2115104d6f1e8dacb9e.jpg"
+                  src="https://i.pinimg.com/736x/d4/27/10/d427108019d5d832b5799ea178dda4f4.jpg"
                   alt="Online Batch"
-                  className="w-full h-80 object-cover rounded-xl mb-4"
-                  style={{ maxWidth: 420 }}
+                  className="w-auto max-h-96 rounded-xl mb-4"
+                  style={{ maxWidth: 520, objectFit: "contain" }}
                 />
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-white mb-2">Online Batch</h3>
@@ -593,10 +593,10 @@ const Home = () => {
                 className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-6"
               >
                 <img
-                  src="https://i.pinimg.com/736x/d6/3e/28/d63e28b98d6ebda18c6177dc0c4e8439.jpg"
+                  src="https://i.pinimg.com/736x/ed/fa/07/edfa07bd1f125799b0c6a38ca7d622f3.jpg"
                   alt="Offline Batch"
-                  className="w-full h-80 object-cover rounded-xl mb-4"
-                  style={{ maxWidth: 420 }}
+                  className="w-auto max-h-96 rounded-xl mb-4"
+                  style={{ maxWidth: 520, objectFit: "contain" }}
                 />
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-white mb-2">Offline Batch</h3>
