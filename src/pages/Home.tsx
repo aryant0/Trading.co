@@ -560,7 +560,7 @@ const Home = () => {
                 className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-6"
               >
                 <img
-                  src="https://i.pinimg.com/736x/d4/27/10/d427108019d5d832b5799ea178dda4f4.jpg"
+                  src="https://i.pinimg.com/736x/f2/8b/28/f28b28c6fad92f304c4ffd1f76da8c52.jpg"
                   alt="Online Batch"
                   className="w-auto max-h-96 rounded-xl mb-4"
                   style={{ maxWidth: 520, objectFit: "contain" }}

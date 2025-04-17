@@ -93,19 +93,31 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Courses</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/module/module1" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link
+                  to="/module/module1"
+                  className="text-gray-300 hover:text-[#FB5E20] transition-colors"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
                   Module 1: Foundation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/module/module2" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link
+                  to="/module/module2"
+                  className="text-gray-300 hover:text-[#FB5E20] transition-colors"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
                   Module 2: Intermediate
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/module/module3" className="text-gray-300 hover:text-[#FB5E20] transition-colors">
+                <Link
+                  to="/module/module3"
+                  className="text-gray-300 hover:text-[#FB5E20] transition-colors"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
                   Module 3: Advanced
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
