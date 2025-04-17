@@ -115,7 +115,7 @@ const Home = () => {
   };
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden max-w-full box-border">
       {/* Moving grid lines background */}
       <div
         ref={gridRef}
@@ -131,7 +131,7 @@ const Home = () => {
       />
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-2 sm:px-0">
+        <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-2 sm:px-0 pt-24 sm:pt-0 w-full box-border">
           {/* Background Video */}
           <motion.video
             autoPlay
@@ -154,9 +154,9 @@ const Home = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
           />
 
-          <div className="relative z-10 max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+          <div className="relative z-10 max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 w-full box-border">
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center"
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center w-full box-border"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
