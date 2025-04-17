@@ -131,7 +131,7 @@ const Home = () => {
       />
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-2 sm:px-0">
           {/* Background Video */}
           <motion.video
             autoPlay
@@ -154,9 +154,9 @@ const Home = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
           />
 
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative z-10 max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <motion.div
-              className="grid md:grid-cols-2 gap-12 items-center"
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -166,18 +166,18 @@ const Home = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="space-y-8"
+                className="space-y-6 sm:space-y-8"
               >
-                <h1 className="text-5xl md:text-6xl font-bold text-white">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white">
                   Master the Art of Stock Market with
-                  <span className="text-[#FB5E20] block mt-4">AUM The Trading Institute</span>
+                  <span className="text-[#FB5E20] block mt-2 sm:mt-4 text-2xl sm:text-4xl md:text-5xl">AUM The Trading Institute</span>
                 </h1>
 
-                <p className="text-xl text-gray-300">
+                <p className="text-base sm:text-xl text-gray-300">
                   Join over 1,000 students who've transformed their trading journey with step-by-step guidance, expert mentorship, and hands-on learning.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <Link
                     to="/batches"
                     className="group inline-flex items-center gap-2 bg-[#FB5E20] text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
@@ -200,7 +200,7 @@ const Home = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="relative aspect-video rounded-xl overflow-hidden shadow-2xl"
+                className="relative aspect-video rounded-xl overflow-hidden shadow-2xl w-full"
               >
                 <iframe
                   className="w-full h-full"
@@ -215,9 +215,9 @@ const Home = () => {
         </section>
 
         {/* Stop the Guessing Section */}
-        <section className="py-24 bg-[#1E2134]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+        <section className="py-12 sm:py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -240,7 +240,7 @@ const Home = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="relative"
+                className="relative mt-8 md:mt-0"
               >
                 <div className="absolute -top-4 -right-4 bg-[#FB5E20] p-4 rounded-lg">
                   <div className="text-white text-center">
@@ -256,7 +256,7 @@ const Home = () => {
                 <img
                   src={googleRatingImages[currentGoogleImageIndex]}
                   alt="Trading Education"
-                  className="rounded-lg shadow-xl object-cover w-full h-auto"
+                  className="rounded-lg shadow-xl object-cover w-full h-60 sm:h-auto"
                 />
               </motion.div>
             </div>
@@ -264,18 +264,18 @@ const Home = () => {
         </section>
 
         {/* About Section */}
-        <section className="py-24 bg-[#1E2134]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-12 sm:py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center mb-12"
+              className="text-center mb-8 sm:mb-12"
             >
-              <h2 className="text-4xl font-bold text-white">About Us</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white">About Us</h2>
             </motion.div>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Left Content */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -307,10 +307,10 @@ const Home = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="relative flex items-center justify-center"
+                className="relative flex items-center justify-center mt-8 md:mt-0"
               >
                 {/* Cut-In Styled Image */}
-                <div className="relative group w-96 h-96 md:w-[28rem] md:h-[28rem]">
+                <div className="relative group w-64 h-64 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem]">
                   <img
                     src="https://i.pinimg.com/736x/b0/b4/60/b0b460f6b0928b57219b1e6da71ea04d.jpg"
                     alt="About Us"
@@ -343,20 +343,20 @@ const Home = () => {
         </section>
 
         {/* Features Section */}
-        <section className="py-24 bg-[#1E2134]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-12 sm:py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center mb-16"
+              className="text-center mb-10 sm:mb-16"
             >
-              <h2 className="text-4xl font-bold mb-4 text-white">Why Choose Us</h2>
-              <p className="text-gray-400">Expertise that Speaks Louder than Charts</p>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">Why Choose Us</h2>
+              <p className="text-gray-400 text-base sm:text-lg">Expertise that Speaks Louder than Charts</p>
             </motion.div>
 
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-x-auto">
               {/* Manual navigation buttons */}
               <button
                 aria-label="Previous"
@@ -375,7 +375,7 @@ const Home = () => {
                 &#8594;
               </button>
               <motion.div
-                className="flex gap-8 transition-transform duration-700 ease-in-out"
+                className="flex gap-4 sm:gap-8 transition-transform duration-700 ease-in-out"
                 animate={{ x: getTranslateX() }}
                 style={{
                   width: `${carouselFeatures.length * (100 / featuresToShow)}%`,
@@ -384,7 +384,7 @@ const Home = () => {
                 {carouselFeatures.map((feature, idx) => (
                   <motion.div
                     key={idx}
-                    className="flex-shrink-0 w-80 bg-[#1E2134] p-8 rounded-2xl border border-[#FB5E20]/20 hover:border-[#FB5E20]/40 transition-all"
+                    className="flex-shrink-0 w-72 sm:w-80 bg-[#1E2134] p-6 sm:p-8 rounded-2xl border border-[#FB5E20]/20 hover:border-[#FB5E20]/40 transition-all"
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
@@ -397,7 +397,7 @@ const Home = () => {
               </motion.div>
             </div>
             {/* Dots for navigation */}
-            <div className="flex justify-center mt-6 gap-2">
+            <div className="flex justify-center mt-4 sm:mt-6 gap-2">
               {features.map((_, idx) => (
                 <button
                   key={idx}
@@ -411,24 +411,24 @@ const Home = () => {
         </section>
 
         {/* New Features Section */}
-        <section className="py-24 bg-[#1E2134] relative">
+        <section className="py-12 sm:py-24 bg-[#1E2134] relative">
           {/* Decorative Shapes */}
           <div className="absolute top-0 left-0 w-32 h-32 bg-[#FB5E20]/20 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-0 w-48 h-48 bg-[#FB5E20]/10 rounded-full blur-2xl" />
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 relative">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center mb-16"
+              className="text-center mb-10 sm:mb-16"
             >
-              <h2 className="text-4xl font-bold mb-4 text-white">What Sets Us Apart</h2>
-              <p className="text-gray-400">Discover the unique advantages of learning with us</p>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">What Sets Us Apart</h2>
+              <p className="text-gray-400 text-base sm:text-lg">Discover the unique advantages of learning with us</p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {features.map((feature, index) => (
                 <motion.div
                   key={feature.title}
@@ -501,17 +501,17 @@ const Home = () => {
         </section>
 
         {/* Download the Brochure Section */}
-        <section className="py-24 bg-[#1E2134]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="py-12 sm:py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="mb-12"
+              className="mb-8 sm:mb-12"
             >
-              <h2 className="text-4xl font-bold text-white mb-4">Download the Brochure</h2>
-              <p className="text-gray-400 text-lg">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Download the Brochure</h2>
+              <p className="text-gray-400 text-base sm:text-lg">
                 Get detailed insights about our courses, mentorship, and strategies. Download the brochure now!
               </p>
             </motion.div>
@@ -526,7 +526,7 @@ const Home = () => {
                 href="/brochure.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#FB5E20] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all"
+                className="inline-block bg-[#FB5E20] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-[#FB5E20]/90 transition-all text-base sm:text-lg"
               >
                 View Brochure
               </a>
@@ -535,35 +535,34 @@ const Home = () => {
         </section>
 
         {/* Go at Your Own Pace Section */}
-        <section className="py-24 bg-[#1E2134]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-12 sm:py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center mb-12"
+              className="text-center mb-8 sm:mb-12"
             >
-              <h2 className="text-4xl font-bold text-white mb-4">Go at Your Own Pace</h2>
-              <p className="text-gray-400 text-lg">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Go at Your Own Pace</h2>
+              <p className="text-gray-400 text-base sm:text-lg">
                 Explore all of our courses and pick your suitable ones to enroll and start learning with us! We ensure that you will never regret it!
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 items-center">
               {/* Online Batch */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-6"
+                className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-4 sm:p-6"
               >
                 <img
                   src="https://i.pinimg.com/736x/f2/8b/28/f28b28c6fad92f304c4ffd1f76da8c52.jpg"
                   alt="Online Batch"
-                  className="w-auto max-h-96 rounded-xl mb-4"
-                  style={{ maxWidth: 520, objectFit: "contain" }}
+                  className="w-full max-w-xs sm:max-w-lg max-h-60 sm:max-h-96 rounded-xl mb-4 object-contain"
                 />
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-white mb-2">Online Batch</h3>
@@ -590,13 +589,12 @@ const Home = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-6"
+                className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-4 sm:p-6"
               >
                 <img
                   src="https://i.pinimg.com/736x/ed/fa/07/edfa07bd1f125799b0c6a38ca7d622f3.jpg"
                   alt="Offline Batch"
-                  className="w-auto max-h-96 rounded-xl mb-4"
-                  style={{ maxWidth: 520, objectFit: "contain" }}
+                  className="w-full max-w-xs sm:max-w-lg max-h-60 sm:max-h-96 rounded-xl mb-4 object-contain"
                 />
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-white mb-2">Offline Batch</h3>
@@ -621,22 +619,22 @@ const Home = () => {
         </section>
 
         {/* Contact Us Section */}
-        <section className="py-24 bg-[#1E2134]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="py-12 sm:py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="mb-12"
+              className="mb-8 sm:mb-12"
             >
-              <h2 className="text-4xl font-bold text-white mb-4">Contact Us</h2>
-              <p className="text-gray-400 text-lg">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Contact Us</h2>
+              <p className="text-gray-400 text-base sm:text-lg">
                 Have questions? Reach out to us for more details about our batches and courses.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
               {/* Phone Number */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -677,20 +675,20 @@ const Home = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 bg-[#1E2134]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-12 sm:py-24 bg-[#1E2134]">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center mb-16"
+              className="text-center mb-10 sm:mb-16"
             >
-              <h2 className="text-4xl font-bold mb-4 text-white">Find Answers to Common Questions</h2>
-              <p className="text-gray-400">Hover over a question to see the answer</p>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">Find Answers to Common Questions</h2>
+              <p className="text-gray-400 text-base sm:text-lg">Hover over a question to see the answer</p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {faqs.map((faq, index) => (
                 <motion.div
                   key={index}
