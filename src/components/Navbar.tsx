@@ -21,13 +21,13 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 backdrop-blur-md bg-white/30 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img 
-              src="https://www.aumtrades.com/wp-content/uploads/2025/01/Untitled-design-2025-01-28T203442.215.png" 
+              src="/logo-removebg-preview.png" 
               alt="Logo" 
-              className="h-12 w-auto rounded-lg"
+              className="h-24 w-auto rounded-lg"
             />
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

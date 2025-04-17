@@ -134,7 +134,7 @@ const About = () => {
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-xl">
               <motion.img
-                src="https://www.aumtrades.com/wp-content/uploads/2025/02/IMG_1623.jpg"
+                src="https://i.pinimg.com/736x/76/4d/c7/764dc78cf283ae40f20cbf643197f2d8.jpg"
                 alt="Trading Education"
                 className="rounded-lg w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                 whileHover={{ scale: 1.08 }}
