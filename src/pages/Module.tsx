@@ -212,7 +212,11 @@ const Module = () => {
                       transition={{ duration: 0.3, delay: index * 0.1 }}
                       className="flex items-start gap-3"
                     >
-                      <p className="text-gray-300">{point.replace(/^•\s*/, '')}</p>
+                      {point.match(/^Module \d+\.\d+:/) ? (
+                        <p className="text-[#FB5E20] font-semibold">{point}</p>
+                      ) : (
+                        <p className="text-gray-300">{point.replace(/^•\s*/, '')}</p>
+                      )}
                     </motion.div>
                   )
                 ))}

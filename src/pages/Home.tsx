@@ -557,13 +557,13 @@ const Home = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-4 sm:p-6"
+                className="flex flex-col items-center bg-[#23263a] rounded-3xl shadow-xl p-4 sm:p-6"
               >
                 <img
-                  src="https://i.pinimg.com/736x/f2/8b/28/f28b28c6fad92f304c4ffd1f76da8c52.jpg"
-                  alt="Online Batch"
-                  className="w-full max-w-xs sm:max-w-lg max-h-60 sm:max-h-96 rounded-xl mb-4 object-contain"
-                />
+  src="https://i.pinimg.com/736x/f2/8b/28/f28b28c6fad92f304c4ffd1f76da8c52.jpg"
+  alt="Online Batch"
+  className="w-full max-w-xs sm:max-w-lg max-h-60 sm:max-h-96 rounded-3xl mb-4 object-contain"
+/>
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-white mb-2">Online Batch</h3>
                   <p className="text-gray-400 text-base">
@@ -589,13 +589,13 @@ const Home = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="flex flex-col items-center bg-[#23263a] rounded-2xl shadow-xl p-4 sm:p-6"
+                className="flex flex-col items-center bg-[#23263a] rounded-3xl shadow-xl p-4 sm:p-6"
               >
                 <img
-                  src="https://i.pinimg.com/736x/ed/fa/07/edfa07bd1f125799b0c6a38ca7d622f3.jpg"
-                  alt="Offline Batch"
-                  className="w-full max-w-xs sm:max-w-lg max-h-60 sm:max-h-96 rounded-xl mb-4 object-contain"
-                />
+  src="https://i.pinimg.com/736x/ed/fa/07/edfa07bd1f125799b0c6a38ca7d622f3.jpg"
+  alt="Offline Batch"
+  className="w-full max-w-xs sm:max-w-lg max-h-60 sm:max-h-96 rounded-3xl mb-4 object-contain"
+/>
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-white mb-2">Offline Batch</h3>
                   <p className="text-gray-400 text-base">

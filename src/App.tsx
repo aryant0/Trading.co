@@ -13,8 +13,9 @@ import OnlineBatch from './pages/OnlineBatch';
 import OfflineBatch from './pages/OfflineBatch';
 import { AnimatePresence } from 'framer-motion';
 import CursorTrail from './components/CursorTrail';
+import AdminPanel from './components/AdminPanel';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <div className="relative min-h-screen bg-black text-white">
@@ -23,7 +24,7 @@ function App() {
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Batches" element={<Batches/>} />
+            <Route path="/batches" element={<Batches />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
@@ -31,12 +32,13 @@ function App() {
             <Route path="/module/:moduleId" element={<Module />} />
             <Route path="/online-batch" element={<OnlineBatch />} />
             <Route path="/offline-batch" element={<OfflineBatch />} />
+            <Route path="/admin" element={<AdminPanel />} />
           </Routes>
         </AnimatePresence>
         <Footer />
       </div>
     </Router>
   );
-}
+};
 
 export default App;

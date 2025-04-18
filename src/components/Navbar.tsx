@@ -19,13 +19,14 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-50 backdrop-blur-md bg-white/30 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pl-0 pr-4 sm:pl-0 sm:pr-6 lg:pl-0 lg:pr-8">
         <div className="flex items-center justify-between h-16">
-          <a href="/" className="flex items-center">
+          {/* Logo aligned extreme left */}
+          <a href="/" className="flex items-center flex-shrink-0 ml-0">
             <img 
               src="/logo-removebg-preview.png" 
               alt="Logo" 
-              className="h-24 w-auto rounded-lg"
+              className="h-14 sm:h-20 md:h-24 w-auto rounded-lg object-contain m-0 p-0"
             />
           </a>
 
